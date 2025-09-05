@@ -1,7 +1,4 @@
-
 //Quiz de 1.1: Ruleta
-import java.util.Scanner;
-
 public class Ruleta {
   public static void main(String[] args) {
     int[][] matriz = {
@@ -11,45 +8,70 @@ public class Ruleta {
     };
     System.out.println("Ruleta original:");
     imprimirMatriz(matriz);
+  
 
-    Scanner sc = new Scanner(System.in);
-    System.out.print("¿Cuántas veces desea girar la ruleta?: ");
-    int giros = sc.nextInt();
+    String[][] matriz1 = {
+        {"N", "J", "K"},
+        {"I", "Z", "Y"},
+        {"U", "E", "R"}
+    };
+ 
+    int[][] matriz2 = {
+        {1, 2, 3},
+        {4, 5, 6}
+    };
 
-    imprimirMatriz(girar(matriz, giros));
+    System.out.println("matriz1 girada 2 veces:");
+    imprimirMatriz(girarRuleta(matriz1, 2));
+    System.out.println("matriz2 girada -1 vez:");
+    imprimirMatriz(girarRuleta(matriz2, -1));
   }
 
-  public static int[][] girar(int[][] mtr, int n) {
+  public static String[][] girarRuleta(String[][] matriz, int numGiros) {
+    if (numGiros == 0) return matriz;
+    numGiros -= 1;
+    matriz = rotarMatriz(matriz);
+    return girarRuleta(matriz, numGiros % 4);
+  }
 
-    for (int i = 0; i < n; i++) {
-      mtr = trans(mtr);
+  public static String[][] rotarMatriz(String[][] matriz) {
+    int numFilas = matriz.length;
+    int numColumnas = matriz[0].length;
+    String[][] nuevaMatriz = new String[numColumnas][numFilas];
+    for (int j = 0; j < numColumnas; j++) {
+      for (int i = numFilas - 1, k = 0; i >= 0; i--, k++) {
+        nuevaMatriz[j][k] = matriz[i][j];
+      }
     }
-    return mtr;
-
+    return nuevaMatriz;
   }
 
-  private static int[][] trans(int[][] mtr) {
-    int n = mtr.length;
-    if (n < 2)
-      return mtr;
+  public static void imprimirMatriz(String[][] matriz) {
+    for (int i = 0; i < matriz.length; i++) {
+      for (int j = 0; j < matriz[i].length; j++) {
+        System.out.print(matriz[i][j]);
+      }
+      System.out.println();
+    }
+  }
 
-    int temp = mtr[0][0];
+  public static int[][] girarRuleta(int[][] matriz, int numGiros) {
+    if (numGiros == 0) return matriz;
+    numGiros -= 1;
+    matriz = rotarMatriz(matriz);
+    return girarRuleta(matriz, numGiros % 4);
+  }
 
-    for (int j = 0; j < n - 1; j++)
-      mtr[0][j] = mtr[0][j + 1];
-
-    for (int i = 0; i < n - 1; i++)
-      mtr[i][n - 1] = mtr[i + 1][n - 1];
-
-    for (int j = n - 1; j > 0; j--)
-      mtr[n - 1][j] = mtr[n - 1][j - 1];
-
-    for (int i = n - 1; i > 1; i--)
-      mtr[i][0] = mtr[i - 1][0];
-
-    mtr[1][0] = temp;
-
-    return mtr;
+  public static int[][] rotarMatriz(int[][] matriz) {
+    int numFilas = matriz.length;
+    int numColumnas = matriz[0].length;
+    int[][] nuevaMatriz = new int[numColumnas][numFilas];
+    for (int j = 0; j < numColumnas; j++) {
+      for (int i = numFilas - 1, k = 0; i >= 0; i--, k++) {
+        nuevaMatriz[j][k] = matriz[i][j];
+      }
+    }
+    return nuevaMatriz;
   }
 
   public static void imprimirMatriz(int[][] matriz) {

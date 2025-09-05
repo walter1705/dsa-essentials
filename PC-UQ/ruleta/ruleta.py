@@ -29,9 +29,6 @@ def rotarMatriz(matriz, nuevaMatriz, numfilas, numcolumnas, i, j):
 
     return rotarMatriz(matriz, nuevaMatriz, numfilas, numcolumnas, i, j + 1)
 
-
-
-
 def imprimirMatriz(matriz,i,j):
     if(i==len(matriz)): return
     imprimirFila(matriz,i,j)
