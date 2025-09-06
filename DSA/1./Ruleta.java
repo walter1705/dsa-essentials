@@ -1,4 +1,6 @@
 //Quiz de 1.1: Ruleta
+
+
 public class Ruleta {
   public static void main(String[] args) {
     int[][] matriz = {
@@ -43,8 +45,11 @@ public class Ruleta {
         nuevaMatriz[j][k] = matriz[i][j];
       }
     }
+    
     return nuevaMatriz;
   }
+
+  
 
   public static void imprimirMatriz(String[][] matriz) {
     for (int i = 0; i < matriz.length; i++) {
