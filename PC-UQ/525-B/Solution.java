@@ -1,8 +1,12 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
+
+import javax.print.DocFlavor.STRING;
 
 public class Solution {
   public static void main(String[] args) {
@@ -14,6 +18,8 @@ public class Solution {
         .map(Integer::parseInt)
         .collect(Collectors.toCollection(ArrayList::new));
     scanner.close();
+    HashMap<Integer, String> a = new HashMap<>();
+    Iterator<Map.Entry<Integer,String>> it = a.entrySet().iterator();
     System.out.println(method(str, m, arr));
   }
 

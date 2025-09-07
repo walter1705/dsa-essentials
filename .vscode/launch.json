@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "preparcial.zoo.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "MatrizDiagonal",
+      "request": "launch",
+      "mainClass": "preparcial.MatrizDiagonal",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Solution",
+      "request": "launch",
+      "mainClass": "Solution",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": false,
+      "cwd": "/home/walter17/Projects/dsa-UQ/PC-UQ/c-practice",
+      "program": "/home/walter17/Projects/dsa-UQ/PC-UQ/c-practice/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
