@@ -5,6 +5,34 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Ruleta",
+      "request": "launch",
+      "mainClass": "Ruleta",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "preparcial.comparables.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "preparcial.linkedList.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "preparcial.zoo.Main",
       "projectName": "dsa-UQ_82fdbb63"
     },

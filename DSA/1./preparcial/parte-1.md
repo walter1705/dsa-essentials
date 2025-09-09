@@ -115,14 +115,20 @@ Iterator<Map.Entry<Integer, String>> it = map.entrySet().iterator();
 
 ### Enunciados
 
-- Diseñar una clase genérica Zoo<T> que contenga una LinkedList de Animales. Cada Animal tiene un nombre, especie y edad. Implementar un método que use un iterador para encontrar todos los animales de una especie específica. Además, implementar una clase interna que permita ordenar los animales por edad usando comparadores.
+1. Diseñar una clase genérica Zoo<T> que contenga una LinkedList de Animales. Cada Animal tiene un nombre, especie y edad. Implementar un método que use un iterador para encontrar todos los animales de una especie específica. Además, implementar una clase interna que permita ordenar los animales por edad usando comparadores.
 
-Solucion en ./zoo/
+Solucion [en.](./zoo/Main.java)
 
-- Diseñar un método genérico que tome dos
-  listas de cualquier tipo List<T> y devuelva una nueva LinkedList que contenga solo los elementos que están presentes en ambas listas, es decir, la intersección de las dos listas.
+2. Diseñar un método genérico que tome dos
+   listas de cualquier tipo List<T> y devuelva una nueva LinkedList que contenga solo los elementos que están presentes en ambas listas, es decir, la intersección de las dos listas.
 
-- Implementar un método genérico que reciba una lista de elementos comparables y devuelva el segundo máximo elemento en dicha lista. Usa la interfaz Comparable<T> para asegurar que los elementos puedan ser comparados (sin usar ciclos ni lambdas).
+Solucion [en.](./linkedList/Main.java)
+
+3. Implementar un método genérico que reciba una lista de elementos comparables y devuelva el segundo máximo elemento en dicha lista. Usa la interfaz Comparable<T> para asegurar que los elementos puedan ser comparados (sin usar ciclos ni lambdas).
+
+Solucion [en.](./comparables/Main.java)
+
+- Resultado del codigo
 
 ---
 

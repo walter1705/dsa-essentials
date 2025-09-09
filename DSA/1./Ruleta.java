@@ -1,5 +1,9 @@
 //Quiz de 1.1: Ruleta
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
 
 public class Ruleta {
   public static void main(String[] args) {
@@ -23,6 +27,7 @@ public class Ruleta {
         {4, 5, 6}
     };
 
+    
     System.out.println("matriz1 girada 2 veces:");
     imprimirMatriz(girarRuleta(matriz1, 2));
     System.out.println("matriz2 girada -1 vez:");
