@@ -5,6 +5,27 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "preparcial.comparablesII.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "preparcial.juntar.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "preparcial.camion.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "Main",
       "projectName": "dsa-UQ_82fdbb63"
     },

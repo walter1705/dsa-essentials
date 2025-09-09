@@ -211,16 +211,14 @@ R-/ A
 
 ### Enunciados
 
-4.  Crear una clase genérica Camión que contenga una linkedList de Canastas cada canasta tiene código y peso, realizar en la clase tienda un método que retorne las canastas con peso menor a 20 usando iteradores. [En.]()
+4.  Crear una clase genérica Camión que contenga una linkedList de Canastas cada canasta tiene código y peso, realizar en la clase tienda un método que retorne las canastas con peso menor a 20 usando iteradores. [En.](./camion/Main.java)
 
-5.  Implementar un método genérico que reciba dos listas de cualquier tipo(List) y devuelva una nueva LinkedList con la unión de ambas listas, eliminando los elementos duplicados. Usa las clases e interfaces de java.util.Collections(no se pueden usar ciclos, ni recursividad). [En.]()
+5.  Implementar un método genérico que reciba dos listas de cualquier tipo(List) y devuelva una nueva LinkedList con la unión de ambas listas, eliminando los elementos duplicados. Usa las clases e interfaces de java.util.Collections(no se pueden usar ciclos, ni recursividad). [En.](./juntar/Main.java)
 
-6.  Crear una clase genérica Cola<T> con un tamaño máximo. Al intentar agregar más elementos de los permitidos, se debe lanzar una excepción IllegalStateException. [En.]()
+6.  Crear una clase genérica Cola<T> con un tamaño máximo. Al intentar agregar más elementos de los permitidos, se debe lanzar una excepción IllegalStateException. [En.](./cola/Main.java)
 
-7.  Implementar un método genérico que reciba una lista de elementos comparables y devuelva el máximo elemento en dicha lista. Usa la interfaz Comparable<T> para asegurar que los elementos puedan ser comparados(no usar ciclos ni recursividad). [En.]()
+7.  Implementar un método genérico que reciba una lista de elementos comparables y devuelva el máximo elemento en dicha lista. Usa la interfaz Comparable<T> para asegurar que los elementos puedan ser comparados(no usar ciclos ni recursividad). [En.](./comparablesII/Main.java)
 
 ---
-
-Si me equivoco estuve bajo las supervicion y control de Claude Opus 4.
 
 :)
