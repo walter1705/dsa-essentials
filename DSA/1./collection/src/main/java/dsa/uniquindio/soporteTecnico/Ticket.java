@@ -1,9 +1,6 @@
 package dsa.uniquindio.soporteTecnico;
 
 import java.time.LocalDateTime;
-import java.util.PriorityQueue;
-
-
 
 public class Ticket implements Comparable<Ticket> {
     private String descripcion;

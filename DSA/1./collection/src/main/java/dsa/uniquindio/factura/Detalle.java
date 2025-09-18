@@ -1,7 +1,6 @@
 package dsa.uniquindio.factura;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
+
 
 class Detalle {
     private String nombre;

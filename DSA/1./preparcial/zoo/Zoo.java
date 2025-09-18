@@ -19,7 +19,7 @@ public class Zoo<T extends Animal>  {
       if (actual.especie == especie) {
         System.out.println("Name: " + actual.nombre + ", Age: " + actual.edad + ", Species: " + actual.especie);
       }
-    }
+    } 
   }
 
   public void printAllAnimals() {

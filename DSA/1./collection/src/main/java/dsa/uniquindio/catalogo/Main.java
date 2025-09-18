@@ -1,6 +1,5 @@
 package dsa.uniquindio.catalogo;
 
-import java.util.Collections;
 
 
 public class Main {

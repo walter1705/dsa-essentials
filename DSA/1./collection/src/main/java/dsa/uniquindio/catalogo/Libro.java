@@ -1,6 +1,5 @@
 package dsa.uniquindio.catalogo;
 
-import java.util.Comparator;
 import java.util.Objects;
 
 public class Libro implements Comparable<Libro> {

@@ -1,9 +1,5 @@
 //Quiz de 1.1: Ruleta
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 
 public class Ruleta {
   public static void main(String[] args) {

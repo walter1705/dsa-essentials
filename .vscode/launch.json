@@ -5,6 +5,27 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "dsa.uniquindio.Main",
+      "projectName": "listasEnlazadas"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.listas.App",
+      "projectName": "listasenlazadas"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.example.App",
+      "projectName": "linkedlist"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "preparcial.comparablesII.Main",
       "projectName": "dsa-UQ_82fdbb63"
     },

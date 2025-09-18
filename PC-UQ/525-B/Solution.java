@@ -6,8 +6,6 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-import javax.print.DocFlavor.STRING;
-
 public class Solution {
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

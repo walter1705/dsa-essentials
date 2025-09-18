@@ -16,17 +16,16 @@ public class Main {
   }
 
   public static void main(String[] args) {
-    List<String> colors = new ArrayList<>();
-    colors.add("Red");
-    colors.add("Green");
-    colors.add("Blue");
+    List<String> fruits = new ArrayList<>();
+fruits.add("Apple");
+fruits.add("Banana");
+fruits.add("Cherry");
 
-    for (String color : colors) {
-    if (color.equals("Green")) {
-      colors.remove(color);
+for (String fruit : fruits) {
+    if (fruit.equals("Banana")) {
+        fruits.add("Date");
     }
-    }
-    System.out.println(colors.size());
-
-  }
+}
+System.out.println(fruits.size());
+}
 }
