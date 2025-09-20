@@ -1,6 +1,6 @@
 package dsa.uniquindio;
 
-
+import java.util.NoSuchElementException;
 
 public class SimpleLinkedList {
   int size = 0;
@@ -58,6 +58,7 @@ public class SimpleLinkedList {
   }
 
   private void addBetween(int index, int value) {
+    validateIndex(index);
     int counter = 0;
     Node newNode = new Node(value);
     Node auxNode = firstNode;
@@ -72,7 +73,87 @@ public class SimpleLinkedList {
     }
   }
 
+  private void validateIndex(int index) {
+    if(index > size-1) {
+      throw new IndexOutOfBoundsException("Index out of bounds.");
+    } else if (index < 0) {
+      throw new IllegalArgumentException("Not valid index.");
+    }
+  }
+
   public int size() {
     return size;
   }
+
+  public void remove(int index) {
+    validateIndex(index);
+
+    if(index == size()-1) {
+      removeLast();
+    } else if (index==0) {
+      removeFirst();
+    } else {
+      removeBetween(index);
+    }
+  }
+
+  private void removeLast() {
+    Node auxNode = firstNode;
+    int counter = 0;
+
+    if(size()==0) {
+      throw new NoSuchElementException("List is empty.");
+    }
+
+    while (counter != size()-2) {
+      auxNode = auxNode.next;
+      ++counter;
+    }
+
+    auxNode.next = null;
+  }
+
+  private void removeFirst() {
+    firstNode = firstNode.next;
+  }
+
+  public void removeBetween(int index) {
+    Node auxNode = firstNode;
+    int counter = 0;
+    while(counter != index-1) {
+      auxNode = auxNode.next;
+      ++counter;
+    }
+
+    auxNode.setNext(auxNode.next.next);
+  }
+
+  public Node getNode(int index) {
+    validateIndex(index);
+    Node auxNode = firstNode;
+    int counter =0;
+
+    while(index != counter) {
+      auxNode = auxNode.next;
+      ++counter;
+    }
+
+    return auxNode;
+  }
+
+  public Node getNodeRecursive(int index) {
+    Node auxNode = firstNode;
+    return getNodeRecursive(index, auxNode, 0);
+  }
+
+  public Node getNodeRecursive(int index, Node auxNode, int counter) {
+    if (counter==index) return auxNode;
+    return getNodeRecursive(index, auxNode.next, ++counter);
+  }
+
+  public int get(int index) {
+    return getNode(index).value;
+  }
+
+
 }

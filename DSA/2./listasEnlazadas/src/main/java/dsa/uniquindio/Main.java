@@ -8,16 +8,14 @@ public class Main {
     public static void main(String[] args) {
         LinkedList a = new LinkedList<>();
     
-
-
-
-
         SimpleLinkedList list = new SimpleLinkedList();
         list.addFirst(2);
         list.addFirst(1);
         list.addLast(3);
-        list.add(1, 1);
+        list.remove(2);
         list.print();
+        System.out.println("NODO "+ list.getNodeRecursive(1).value);
+
     }
 
 
