@@ -5,6 +5,13 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.listaDobleCircular.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "dsa.uniquindio.Main",
       "projectName": "listasEnlazadas"
     },

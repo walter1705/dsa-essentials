@@ -1,4 +1,4 @@
-package dsa.uniquindio.listaDobleCircular;
+package DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.listaDobleCircular;
 
 public class Node<T> {
     Node<T> next;

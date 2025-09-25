@@ -1,4 +1,4 @@
-package dsa.uniquindio.listaSimple;
+package DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.listaSimple;
 
 import java.util.NoSuchElementException;
 

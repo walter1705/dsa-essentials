@@ -1,4 +1,4 @@
-package dsa.uniquindio.agenda;
+package collection.src.main.java.dsa.uniquindio.agenda;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
