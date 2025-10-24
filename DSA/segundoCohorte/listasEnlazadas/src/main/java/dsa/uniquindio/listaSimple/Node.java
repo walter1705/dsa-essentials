@@ -24,4 +24,16 @@ public class Node<T> {
   public void setNext(Node<T> nextNode) {
     next = nextNode;
   }
+
+  public T getValue() {
+    return value;
+  }
+
+  public void setValue(T val) {
+    this.value = val;
+  }
+
+  public Node<T> getNext() {
+    return next;
+  }
 }

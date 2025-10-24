@@ -5,6 +5,48 @@
       "type": "java",
       "name": "Main",
       "request": "launch",
+      "mainClass": "dsa.uniquindio.arbolBinario.Main",
+      "projectName": "tercerCohorte"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "dsa.uniquindio.Main",
+      "projectName": "tercerCohorte"
+    },
+    {
+      "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "com.tercercohorte.App",
+      "projectName": "tercercohorte"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "collection.src.main.java.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.listaSimple.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.Main",
+      "projectName": "dsa-UQ_82fdbb63"
+    },
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
       "mainClass": "DSA.segundoCohorte.listasEnlazadas.src.main.java.dsa.uniquindio.listaCircular.Main",
       "projectName": "dsa-UQ_82fdbb63"
     },
@@ -113,8 +155,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/walter17/Projects/dsa-UQ/PC-UQ/c-practice",
-      "program": "/home/walter17/Projects/dsa-UQ/PC-UQ/c-practice/build/Debug/outDebug",
+      "cwd": "/home/walter17/Projects/dsa-UQ/PC-UQ",
+      "program": "/home/walter17/Projects/dsa-UQ/PC-UQ/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
