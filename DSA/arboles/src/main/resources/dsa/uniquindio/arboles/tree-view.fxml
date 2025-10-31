@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="dsa.uniquindio.arboles.viewController.TreeViewController"
+            prefHeight="700.0" prefWidth="1000.0"
+            style="-fx-background-color: #f5f5f5;">
+
+    <!-- Top: Title -->
+    <top>
+        <VBox style="-fx-background-color: #2c3e50; -fx-padding: 20;">
+            <Label text="Visualizador de Árbol Binario de Búsqueda" 
+                   textFill="white" 
+                   style="-fx-font-size: 24px; -fx-font-weight: bold;">
+                <font>
+                    <Font name="System Bold" size="24.0"/>
+                </font>
+            </Label>
+            <HBox spacing="20" alignment="CENTER_LEFT" style="-fx-padding: 10 0 0 0;">
+                <Label fx:id="sizeLabel" text="Tamaño: 0" textFill="white" 
+                       style="-fx-font-size: 14px;"/>
+                <Label fx:id="heightLabel" text="Altura: N/A" textFill="white" 
+                       style="-fx-font-size: 14px;"/>
+                <Region HBox.hgrow="ALWAYS"/>
+                <Label fx:id="statusLabel" text="Listo" textFill="#2ecc71" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+            </HBox>
+        </VBox>
+    </top>
+
+    <!-- Center: Tree Visualization -->
+    <center>
+        <VBox spacing="10" style="-fx-padding: 20;">
+            <Label text="Visualización del Árbol" 
+                   style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <Pane fx:id="treeCanvas" 
+                  style="-fx-background-color: white; -fx-border-color: #bdc3c7; -fx-border-width: 2; -fx-border-radius: 5;"
+                  prefHeight="400.0" 
+                  VBox.vgrow="ALWAYS"/>
+        </VBox>
+    </center>
+
+    <!-- Right: Controls and Output -->
+    <right>
+        <VBox spacing="15" style="-fx-padding: 20; -fx-background-color: white; -fx-border-color: #bdc3c7; -fx-border-width: 0 0 0 2;" 
+              prefWidth="320">
+            
+            <!-- Input Section -->
+            <VBox spacing="10" style="-fx-padding: 10; -fx-background-color: #ecf0f1; -fx-border-radius: 5;">
+                <Label text="Entrada de Datos" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <HBox spacing="10" alignment="CENTER_LEFT">
+                    <TextField fx:id="inputField" 
+                              promptText="Ingrese un número"
+                              prefWidth="150"
+                              style="-fx-font-size: 14px;"/>
+                </HBox>
+            </VBox>
+
+            <!-- Basic Operations -->
+            <VBox spacing="8" style="-fx-padding: 10; -fx-background-color: #ecf0f1; -fx-border-radius: 5;">
+                <Label text="Operaciones Básicas" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                
+                <Button text="Insertar" 
+                        onAction="#handleInsert" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Button>
+                
+                <Button text="Buscar" 
+                        onAction="#handleSearch" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #3498db; -fx-text-fill: white; -fx-font-weight: bold;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Button>
+                
+                <Button text="Eliminar" 
+                        onAction="#handleDelete" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #e74c3c; -fx-text-fill: white; -fx-font-weight: bold;">
+                    <font>
+                        <Font size="13.0"/>
+                    </font>
+                </Button>
+            </VBox>
+
+            <!-- Traversal Operations -->
+            <VBox spacing="8" style="-fx-padding: 10; -fx-background-color: #ecf0f1; -fx-border-radius: 5;">
+                <Label text="Recorridos" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                
+                <Button text="InOrder (Izq-Raíz-Der)" 
+                        onAction="#handleInOrder" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #9b59b6; -fx-text-fill: white;">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Button>
+                
+                <Button text="PreOrder (Raíz-Izq-Der)" 
+                        onAction="#handlePreOrder" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #9b59b6; -fx-text-fill: white;">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Button>
+                
+                <Button text="PostOrder (Izq-Der-Raíz)" 
+                        onAction="#handlePostOrder" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #9b59b6; -fx-text-fill: white;">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Button>
+            </VBox>
+
+            <!-- Additional Operations -->
+            <VBox spacing="8" style="-fx-padding: 10; -fx-background-color: #ecf0f1; -fx-border-radius: 5;">
+                <Label text="Otras Operaciones" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                
+                <HBox spacing="5">
+                    <Button text="Mínimo" 
+                            onAction="#handleFindMin" 
+                            maxWidth="Infinity"
+                            HBox.hgrow="ALWAYS"
+                            style="-fx-background-color: #16a085; -fx-text-fill: white;">
+                        <font>
+                            <Font size="12.0"/>
+                        </font>
+                    </Button>
+                    
+                    <Button text="Máximo" 
+                            onAction="#handleFindMax" 
+                            maxWidth="Infinity"
+                            HBox.hgrow="ALWAYS"
+                            style="-fx-background-color: #16a085; -fx-text-fill: white;">
+                        <font>
+                            <Font size="12.0"/>
+                        </font>
+                    </Button>
+                </HBox>
+                
+                <Button text="Imprimir Árbol" 
+                        onAction="#handlePrintTree" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #f39c12; -fx-text-fill: white;">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Button>
+                
+                <Button text="Limpiar Árbol" 
+                        onAction="#handleClear" 
+                        maxWidth="Infinity"
+                        style="-fx-background-color: #95a5a6; -fx-text-fill: white; -fx-font-weight: bold;">
+                    <font>
+                        <Font size="12.0"/>
+                    </font>
+                </Button>
+            </VBox>
+
+            <!-- Output Area -->
+            <VBox spacing="5" VBox.vgrow="ALWAYS">
+                <Label text="Salida" 
+                       style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+                <TextArea fx:id="outputArea" 
+                         editable="false"
+                         wrapText="true"
+                         style="-fx-font-family: 'Courier New'; -fx-font-size: 12px;"
+                         VBox.vgrow="ALWAYS"
+                         prefHeight="200"/>
+            </VBox>
+
+        </VBox>
+    </right>
+
+</BorderPane>
