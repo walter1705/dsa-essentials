@@ -37,3 +37,14 @@ buildNumber.properties
 /nbbuild/
 /dist/
 /nbdist/
+/.nb-gradle/
+
+# C++ compilation files
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+*.dylib

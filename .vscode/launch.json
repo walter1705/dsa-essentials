@@ -155,8 +155,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/home/walter17/Projects/dsa-UQ/PC-UQ/round1062",
-      "program": "/home/walter17/Projects/dsa-UQ/PC-UQ/round1062/build/Debug/outDebug",
+      "cwd": "/home/walter17/Projects/dsa-UQ/PC-UQ/1067div2",
+      "program": "/home/walter17/Projects/dsa-UQ/PC-UQ/1067div2/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
